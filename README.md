@@ -51,3 +51,21 @@ is the point, and it is enforced by validation rather than left implicit:
 
 The reasoning behind each decision is in
 [docs/design-decisions.md](docs/design-decisions.md).
+
+## Development
+
+```bash
+uv run pytest
+uv run --with ruff ruff check src tests
+uv lock --check
+uv build
+uv run allocdp-benchmark --output-dir /tmp/allocdp-benchmark
+```
+
+The benchmark compares exact dynamic programming, a greedy marginal-gain
+baseline, and a brute-force oracle across diminishing-return, minimum-bound,
+wide-frontier, and non-concave synthetic value curves. It writes hash-bound
+JSON/CSV/Markdown artifacts and makes the greedy failure mode visible; it is an
+algorithmic contract, not a business or resource outcome claim.
+
+MIT licensed; see [LICENSE](LICENSE).

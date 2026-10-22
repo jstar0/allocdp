@@ -49,8 +49,6 @@ is the point, and it is enforced by validation rather than left implicit:
 - **Benchmark scenarios are synthetic.** They exercise the solver's contract;
   they are not a claim about any real allocation problem.
 
-The reasoning behind each decision is in
-[docs/design-decisions.md](docs/design-decisions.md).
 
 ## Development
 

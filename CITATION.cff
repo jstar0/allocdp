@@ -1,9 +1,0 @@
-cff-version: 1.2.0
-title: "AllocDP"
-message: "If AllocDP helps your planning experiments, please cite the repository."
-type: software
-authors:
-  - family-names: "jstar"
-version: 0.1.0
-date-released: 2026-09-04
-abstract: "Exact and baseline resource allocation with replayable value curves."
